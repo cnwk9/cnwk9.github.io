@@ -1,4 +1,27 @@
 <!DOCTYPE html>
 <html>
-<h1>this is a test</h1>
+    <h1>this is a test</h1>
+    <input id="answer" type="text" placeholder="Type your answer here">
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <div id="reward" style="display: none">
+        <img src="WiseGuy.png">
+        <h2>You are wise!</h2>
+    </div>
+    <div id="wrong" style="display: none">
+        <h2>Try again</h2>
+    </div>
+    
+    <script>
+        function checkAnswer(){
+            var answer = document.getElementById("answer").value;
+            var wrong = document.getElementById("wrong");
+            wrong.style.display = "none";
+            if(answer.toLowerCase() == "yes"){
+                var reward = document.getElementById("reward");
+                reward.style.display = "block";
+            }else{
+                wrong.style.display = "block";
+            }
+        }
+    </script>
 </html>
