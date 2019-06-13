@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+         /*a cool button, a big score text */
+         button{
+             width: 300px;
+            height: 300px;
+            background-color: green;
+            color: black;
+            font-size: 72px;
+            border: 5px solid red;
+            outline: none;
+            border-radius: 200px;
+         }
+         
+         
+         
+         
+         button:hover{
+             
+             background-color: aquamarine;
+             border-color: orange;
+             outline:none;
+             
+         }
+         
+         button:active{
+             color: white;
+             outline:none;
+         }
+        </style>   
+        
+        
+    </head>\
+    <body>
+        <script>
+            var points = 0;
+            function score(){
+              points++;
+                document.getElementById("score").innerHTML = points;
+            }
+            
+            
+            
+            
+        </script>
+        <h1>useless clicker</h1>
+        <button onclick="score()">score!</button>
+        <h3 id="score">0</h3>
+                </body>
+    
+        
+</html>
